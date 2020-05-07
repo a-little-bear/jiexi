@@ -1,14 +1,10 @@
-<?php include ('./data/beipy.inc.php');?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<title>
-			<?php echo $aik['title'];?>
+			视频解析
 		</title>
-		<meta name="keywords" content="<?php echo $aik['keywords'];?>" />
-		<meta name="description" content="<?php echo $aik['description'];?>" />
-		<meta name=viewport content="width=device-width,anicital-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/base64.min.js"></script>
@@ -19,11 +15,11 @@
 		<!--浏览器标签ico-->
 		<link rel="shortcut icon" href="img/favicon.ico" />
 		<!--书签标签-->
-		<link rel="bookmark" href="img/tvico.png" />
+		<link rel="bookmark" href="img/favicon.ico" />
 		<!--苹果桌面标题-->
-		<meta name="apple-mobile-web-app-title" content="全网VIP解析">
+		<meta name="apple-mobile-web-app-title" content="VIP视频解析">
 		<!--苹果桌面图标-->
-		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/tvlogo.png">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/favicon.ico">
 	</head>
 	<body>
 	<header class="navbar-fixed-top">
@@ -45,39 +41,7 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 								<li>
-									<a href="http://beipy.com" target="_blank">官网</a>
-								</li>
-								<li>
-									<a href="http://www.beipy.com" target="_blank">Beipy博客</a>
-								</li>
-								<li>
-									<a href="https://github.com/Beipy/VipVideoResolution" target="_blank"><span class="badge" style="background: #24292e;margin-right:5px;">Git</span>开源程序<span class="sr-only">(current)</span></a>
-								</li>
-								<li>
-									<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=07G2uqOqk6Ki-bC8vg" target="_blank">广告合作</a>
-								</li>
-								<?php echo $aik['topnav'];?>
-							</ul>
-							<!--导航 右侧-->
-							<ul class="nav navbar-nav navbar-right">
-								
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于版本<span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="http://www.beipy.com" target="_blank" title="北漂鱼互动分享（beipy.com)，互动笔记、原创教程、资源分享、疑难解答、最新技术，Web前端及爱好者提供一个信息交流、经验分享、互帮互助的平台">官方博客</a>
-										</li>
-										<li>
-											<a href="<?php echo $aik['weibourl'];?>" target="_blank" title="北漂鱼微博">北漂鱼微博</a>
-										</li>
-										<li>
-											<a href="http://tao.beipy.com" target="_blank" title="领取优惠券购物，不花冤枉钱">鱼券券</a>
-										</li>
-										<li role="separator" class="divider"></li>
-										<li>
-											<a><p>版本号：V2.6</p></a>
-										</li>
-									</ul>
+									<a href="https://www.alittlebear.tk/" target="_blank">博客</a>
 								</li>
 							</ul>
 						</div>
@@ -99,35 +63,35 @@
 						<input type="text" id="url" class="form-control url-text" aria-label="Text input with segmented button dropdown" placeholder="请粘贴视频网址>ㅂ<ﾉ ☆" title="请复制你想要看的视频网址，粘贴到此处点击播放即可！">
 						<div class="input-group-addon">
 							<select class="url-c url-text" title="如发现视频无法正常播放请尝试更换视频线路！" id="jk">
-								<option value="<?php echo $aik['jiekou1'];?>" selected>
-									<?php echo $aik['jiekou1name'];?>
+								<option value="http://jiexi.071811.cc/jx2.php?url=" selected>
+									线路一
 								</option>
-								<option value="<?php echo $aik['jiekou2'];?>">
-									<?php echo $aik['jiekou2name'];?>
+								<option value="http://app.baiyug.cn:2019/vip/?url=">
+									线路二
 								</option>
-								<option value="<?php echo $aik['jiekou3'];?>">
-									<?php echo $aik['jiekou3name'];?>
+								<option value="http://api.nepian.com/ckparse/?url=">
+									线路三
 								</option>
-								<option value="<?php echo $aik['jiekou4'];?>">
-									<?php echo $aik['jiekou4name'];?>
+								<option value="http://j.zz22x.com/jx/?url=">
+									线路四
 								</option>
-								<option value="<?php echo $aik['jiekou5'];?>">
-									<?php echo $aik['jiekou5name'];?>
+								<option value="http://api.wlzhan.com/sudu/?url=">
+									线路五
 								</option>
-								<option value="<?php echo $aik['jiekou6'];?>">
-									<?php echo $aik['jiekou6name'];?>
+								<option value="">
+									线路六
 								</option>
-								<option value="<?php echo $aik['jiekou7'];?>">
-									<?php echo $aik['jiekou7name'];?>
+								<option value="">
+									线路七
 								</option>
-								<option value="<?php echo $aik['jiekou8'];?>">
-									<?php echo $aik['jiekou8name'];?>
+								<option value="">
+									线路八
 								</option>
-								<option value="<?php echo $aik['jiekou9'];?>">
-									<?php echo $aik['jiekou9name'];?>
+								<option value="">
+									线路九
 								</option>
-								<option value="<?php echo $aik['jiekou10'];?>">
-									<?php echo $aik['jiekou10name'];?>
+								<option value="">
+									线路十
 								</option>
 							</select>
 						</div>
@@ -301,24 +265,9 @@
 				<!---->
 			</div>
 		</div>
-		<div class="container-fluid logo-box">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="title-tit">
-							<h4>畅所欲言评论一下 </h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 		<div class="cy-box">
-			<div class="container">
-				<!--畅言内容框-->
-				<?php echo $aik['changyan'];?>
-				<!--PC和WAP自适应版-->
-			</div></div>
-			<?php  include 'footer.php';?>
 			<script type="text/javascript" src="js/tv-beipy.js" /></script>
+		</div>
 	</body>
 </html>
