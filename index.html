@@ -26,6 +26,8 @@ background-attachment: fixed;">
                     <option value="0">接口1 【超清播放 | Flash】</option>
                     <option value="1">接口2 【全网解析】</option>
                     <option value="2">接口3 【稳定通用】</option>
+                    <option value="3">接口4 【自家mp4+m3u8】</option>
+                    <option value="4">接口5 【自家vip视频解析】</option>
                   </select>
                 </div>
               </div>
@@ -68,6 +70,10 @@ $(document).ready(function(){
              $('#player').attr('src',"http://jx.du2.cc/?url="+address);
          }else if(itemValue1 == 2){
              $('#player').attr('src',"https://jx.618g.com/?url="+address);
+         }else if(itemValue1 == 3){
+             $('#player').attr('src',"http://adwz.ga/addons/dplayer/?url="+address);
+         }else if(itemValue1 == 4){
+             $('#player').attr('src',"http://adwz.ga/jiexi/?url="+address);
          }
       };
   });
